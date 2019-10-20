@@ -46,10 +46,10 @@ int main()
             std::vector<int> check_list;
             check_lim = pow(num,0.5);
             
-            std::vector<int> check_range;
-            check_range = range(2,check_lim);
+            // std::vector<int> check_range;
+            // check_range = range(2,check_lim);
 
-            for (auto i : check_range)
+            for (auto i : range(2,check_lim))  //check_range)
             {
                 check_list.push_back(num % i == 0);
             }
